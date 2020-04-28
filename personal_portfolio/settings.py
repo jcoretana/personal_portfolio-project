@@ -25,7 +25,7 @@ SECRET_KEY = '!6l)cbo08lgd5ek#r9!ze(iq-h5=x=vu=5jeae8ygi%+e68%u9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['johncoretana.pythonanywhere.com']
+
 
 
 # Application definition
@@ -125,3 +125,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+try:
+    from .local_settings import *
+except ImportError:
+    print("Looks like no local file. You must be on production mode!")
