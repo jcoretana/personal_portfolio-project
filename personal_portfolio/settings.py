@@ -25,6 +25,8 @@ SECRET_KEY = '!6l)cbo08lgd5ek#r9!ze(iq-h5=x=vu=5jeae8ygi%+e68%u9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+ALLOWED_HOSTS = ['johncoretana.pythonanywhere.com']
+
 
 
 
